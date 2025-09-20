@@ -11,10 +11,10 @@ const statuses = [
 
 export default function Home() {
   return (
-    <div className="bg-cyan-400 min-h-screen px-4 sm:px-6 md:px-8 py-8 md:py-12 flex items-center overflow-x-hidden">
-      <div className="flex flex-wrap w-full max-w-6xl mx-auto">
+    <div className="bg-cyan-400 min-h-screen px-2 sm:px-4 py-8 md:py-12 flex items-center overflow-x-hidden">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl mx-auto gap-8">
         {/* Left Section */}
-  <div className="w-full md:w-1/2 flex flex-col justify-center mb-10 md:mb-0">
+        <div className="w-full md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
           <h1 className="text-white text-5xl font-bold mb-6 leading-tight">
             We help you <br /> grow your bus <br /> faster
           </h1>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         {/* Right Section: Dashboard Mockup */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="relative bg-white rounded-xl shadow-xl p-4 sm:p-6 md:p-8 mt-8 md:mt-0 w-full max-w-xs sm:max-w-md md:max-w-xl">
+          <div className="relative bg-white rounded-xl shadow-xl p-4 sm:p-6 md:p-8 mt-0 w-full max-w-xs sm:max-w-md md:max-w-xl">
             {/* Ads Statuses */}
             <div className="absolute -top-12 right-4 sm:right-10 bg-white shadow rounded-lg px-3 sm:px-6 py-2 flex flex-wrap gap-2">
               {statuses.map((status, i) => (
